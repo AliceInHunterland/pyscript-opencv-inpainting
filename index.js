@@ -30,10 +30,10 @@ window.addEventListener('load', () => {
         ctx.lineCap = "round";
         ctx.strokeStyle = "yellow";
 
-        ctx.lineTo(e.clientX, e.clientY - 400)
+        ctx.lineTo(e.clientX, e.clientY - 450)
         ctx.stroke();
         ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY - 400)
+        ctx.moveTo(e.clientX, e.clientY - 450)
     }
 
 

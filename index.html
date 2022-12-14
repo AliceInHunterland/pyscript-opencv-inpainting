@@ -55,6 +55,14 @@
       .text-center {
         text-align: center;
       }
+      .canvas-container {
+          width: 100%;
+          text-align:center;
+      }
+
+      .canvas {
+          display: inline;
+      }
     </style>
   </head>
 
@@ -67,6 +75,9 @@
         <p class="text-center" style="left: 110px;"> Для тестирования инструмента необходимо нажать на кнопку загрузки и выбрать файл для редактирования. После завершения загрузки, поверх отображенного изображения из файла пользователю необходимо самостоятельно обозначить желаемый объект для замещения, закрасив его, с помощью нажатия на правую кнопку мыши. После того как все нежелательные элементы закрашены, необходимо нажать на кнопку Inpaint. По результатам работы инструмента отобразится изображение с замещенными объектами. Также пользователь может повторить этап выбора нежелательных элементов изображения.
         </p>
 
+        <a href="test2.png" download><p style="text-align:center">Скачать демонстрационный пример</p>
+        </a>
+          <br></br>
 <!--    <div id="debug" class="hidden"></div>-->
     <input  input class="center-block" id="image-file" type="file"  />
 
@@ -83,10 +94,12 @@
       Inpaint
     </button>
         </div> <br>
-    <canvas id="layer1" width="100" height="100"
-            style="position: fixed; z-index: 0;"></canvas>
-    <canvas id="layer2" width="100" height="100"
-            style="position: fixed;  z-index: 1;"></canvas>
+        <div class="canvas-container">
+    <canvas  id="layer1" width="100" height="100"
+            style="align-items: center;position: fixed;  z-index: 0;"></canvas>
+    <canvas  id="layer2" width="100" height="100"
+            style="align-items: center;position: fixed;  z-index: 1;"></canvas>
+            </div>
 <!--    <canvas id="canvas" style="position: relative;  z-index: 0;"></canvas>-->
     <py-script src="main.py"></py-script>
     <script src="index.js"></script>

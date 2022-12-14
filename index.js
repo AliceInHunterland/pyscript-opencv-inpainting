@@ -30,11 +30,12 @@ window.addEventListener('load', () => {
         ctx.lineCap = "round";
         ctx.strokeStyle = "yellow";
 
-        ctx.lineTo(e.clientX, e.clientY - 50)
+        ctx.lineTo(e.clientX, e.clientY - 400)
         ctx.stroke();
         ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY - 50)
+        ctx.moveTo(e.clientX, e.clientY - 400)
     }
+
 
 
     document.getElementById('image-file').onchange = function (e) {

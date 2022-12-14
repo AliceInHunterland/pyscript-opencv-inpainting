@@ -4,6 +4,7 @@ import cv2
 import json
 import js
 import numpy as np
+# import elevation
 
 
 def readb64(encoded_data):
